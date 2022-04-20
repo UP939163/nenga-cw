@@ -3,6 +3,8 @@ function test()
     data = load('data.txt');
     data = prepData(data);
     [input, output] = getInputOutput(data);
+    writematrix(input, 'input.csv');
+    writematrix(output, 'target.csv');
 end
 
 function [normalised] = normalise(data, min, max)
