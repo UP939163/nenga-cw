@@ -20,9 +20,12 @@ t = target';
 trainFcn = 'trainscg';  % Scaled conjugate gradient backpropagation.
 % OR traincgp
 
+% Performance / Loss function
+performFcn = 'crossentropy';
+
 % Create a Pattern Recognition Network
 hiddenLayerSize = 4;
-net = patternnet(hiddenLayerSize, trainFcn);
+net = patternnet(hiddenLayerSize, trainFcn, performFcn);
 
 net.layers{1}.transferFcn = 'logsig';
 net.layers{2}.transferFcn = 'softmax';
