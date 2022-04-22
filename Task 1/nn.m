@@ -27,7 +27,7 @@ performFcn = 'crossentropy';
 hiddenLayerSize = 4;
 net = patternnet(hiddenLayerSize, trainFcn, performFcn);
 
-net.layers{1}.transferFcn = 'logsig';
+net.layers{1}.transferFcn = 'tansig';
 net.layers{2}.transferFcn = 'softmax';
 
 % Setup Division of Data for Training, Validation, Testing

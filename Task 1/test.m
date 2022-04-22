@@ -8,7 +8,7 @@ function test()
 end
 
 function [normalised] = normalise(data, min, max)
-    normalised = (data-min) ./ (max-min);
+    normalised = (((data-min) ./ (max-min)) * 2) - 1;
 end
 
 % Randomise and normalise data
