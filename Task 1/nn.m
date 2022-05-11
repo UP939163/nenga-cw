@@ -36,7 +36,6 @@ net.divideParam.valRatio = 15/100;
 net.divideParam.testRatio = 15/100;
 
 % Randomise Weights
-rng(0)
 net = configure(net,x,t);
 net = setwb(net, rand(35,1));
 
