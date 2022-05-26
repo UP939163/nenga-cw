@@ -1,4 +1,4 @@
-# NENGA Coursework
+# Neural Networks and Genetic Algorithms Coursework
 
 > UP939163, UP940148
 
